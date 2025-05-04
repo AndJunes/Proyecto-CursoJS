@@ -19,7 +19,7 @@ body {
 }
 
 main {
-  background-image: url("/img/fondo-tarea.jpg"); /* Ruta de tu imagen */
+  background-image: url("../img/fondo-tarea.jpg"); /* Ruta de tu imagen */
   background-size: cover;
   background-position: center;
   min-height: 100vh;

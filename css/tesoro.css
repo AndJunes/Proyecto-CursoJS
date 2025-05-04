@@ -18,7 +18,7 @@
 
 main {
   position: relative;
-  background-image: url("/img/fondo-busqueda.jpg"); /* Reemplaza con tu imagen */
+  background-image: url("../img/fondo-busqueda.jpg"); /* Reemplaza con tu imagen */
   background-size: cover;
   background-position: center;
   height: 100vh;

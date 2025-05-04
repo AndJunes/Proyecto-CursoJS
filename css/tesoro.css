@@ -1,0 +1,138 @@
+.navbar {
+  background-color: #d26ba3 !important; /* fondo rosa oscuro */
+  font-size: 1.2rem; /* letras más grandes */
+}
+
+.navbar .nav-link {
+  color: white !important;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  background-color: #c15891 !important; /* hover más fuerte */
+  border-radius: 5px;
+}
+
+
+main {
+  position: relative;
+  background-image: url("/img/fondo-busqueda.jpg"); /* Reemplaza con tu imagen */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Overlay oscuro para mejorar la legibilidad del texto */
+main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 30, 30, 0.6); /* capa oscura semitransparente */
+  z-index: 1;
+}
+
+/* Contenido encima del overlay */
+#pantalla-bienvenida,
+#pantalla-juego {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1); /* recuadro translúcido */
+  padding: 30px;
+  border-radius: 10px;
+  backdrop-filter: blur(8px); /* desenfoque detrás */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  max-width: 800px;
+  width: 100%;
+}
+
+/* Botones */
+#enviar-nombre,
+#iniciar-juego {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #d26ba3; /* rosa oscuro */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#enviar-nombre:hover,
+#iniciar-juego:hover {
+  background-color: #c15891; /* rosa más fuerte */
+}
+
+
+  
+img {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+  
+p {
+    display: block;
+}
+  
+h1, h2 {
+    color: #f7f4f4;
+}
+  
+#pantalla-bienvenida {
+    margin-top: 50px;
+}
+  
+#nombre-jugador {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+    border: 2px solid #f8c8dc; /* rosa pastel */
+    border-radius: 5px;
+}
+  
+#enviar-nombre, #iniciar-juego {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #d26ba3; /* rosa oscuro */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+#enviar-nombre:hover, #iniciar-juego:hover {
+    background-color: #c15891; /* tono más fuerte al pasar el mouse */
+}
+  
+#mapa {
+    margin: 20px auto;
+    display: block;
+}
+  
+#distancia {
+    font-size: 16px;
+    color: #fff; 
+}
+  
+#distancia .distancia-texto.caliente {
+    color: #ff70a6; /* rosa fuerte para “caliente” */
+}
+  
+#distancia .distancia-texto.muy-caliente {
+    color: #ff0055; /* más intenso para “muy caliente” */
+}

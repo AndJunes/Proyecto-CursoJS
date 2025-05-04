@@ -1,0 +1,74 @@
+.navbar {
+  background-color: #d26ba3 !important; /* fondo rosa oscuro */
+  font-size: 1.2rem; /* letras más grandes */
+}
+
+.navbar .nav-link {
+  color: white !important;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  background-color: #c15891 !important; /* hover más fuerte */
+  border-radius: 5px;
+}
+
+
+main {
+    position: relative;
+    background: url("/img/fondo.jpg") no-repeat center center/cover; /* reemplaza con tu imagen */
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    margin: 0;
+    height: 94.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 0;
+    overflow: hidden;
+}
+
+main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* overlay oscuro */
+    z-index: 1;
+}
+
+/* Asegura que el contenido esté encima del overlay */
+main > * {
+    position: relative;
+    z-index: 2;
+}
+
+.juegos-panel {
+    background-color: rgba(255, 255, 255, 0.15); /* blanco semitransparente */
+    backdrop-filter: blur(6px); /* efecto de vidrio esmerilado */
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    max-width: 1500px;
+    margin: auto;
+    z-index: 2;
+}
+
+.btn.btn-secondary {
+  background-color: #d26ba3; /* rosa oscuro */
+  border-color: #d26ba3;
+  color: white;
+}
+
+.btn.btn-secondary:hover {
+  background-color: #c15891; /* rosa más fuerte al pasar el mouse */
+  border-color: #c15891;
+}
+
+

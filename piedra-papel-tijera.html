@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, Paper, Scissors game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/piedra-papel-tijera.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="container-fluid">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link active" href="main.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="tesoro.html">Busca Tesoro</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="tarea.html">Añadir tarea</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="piedra-papel-tijera.html">Piedra-Papel-Tijera</a>
+            </li>
+          </ul>
+      </div>
+    </nav>
+    <main>
+      <section>
+        <h1>Piedra, Papel o Tijera</h1>
+      <details class="rules-container">
+        <summary>Reglas</summary>
+
+        <p>Jugarás contra la computadora.</p>
+        <p>Puedes elegir entre Piedra, Papel y Tijeras.</p>
+        <p>El primero en llegar a tres puntos gana.</p>
+
+        <p>Estas son las reglas para obtener un punto en el juego:</p>
+        <ul>
+          <li>Piedra gana a Tijeras.</li>
+          <li>Tijeras gana a Papel.</li>
+          <li>Papel gana a Piedra.</li>
+        </ul>
+        <p>
+            Si el jugador y la computadora eligen la misma opción (Ej. Papel y Papel), entonces nadie obtiene el punto.
+        </p>
+      </details>
+
+      <div class="score-container">
+        <strong
+          >Jugador: <span class="score" id="player-score">0</span></strong>
+          <span> <br> </span>
+        <strong>Computadora:<span class="score" id="computer-score">0</span></strong
+        >
+      </div>
+      
+
+      <section class="options-container">
+        <h2>Elige una opción:</h2>
+        <div class="btn-container">
+          <button id="rock-btn" class="btn">Roca</button>
+          <button id="paper-btn" class="btn">Papel</button>
+          <button id="scissors-btn" class="btn">Tijeras</button>
+        </div>
+      </section>
+
+      <div class="results-container">
+        <p id="results-msg"></p>
+        <p id="winner-msg"></p>
+        <button class="btn" id="reset-game-btn">Jugar de nuevo</button>
+      </div>
+      </section>
+      
+    </main>
+    <script src="js/piedra-papel-tijera.js"></script>
+  </body>
+</html>
